@@ -1,0 +1,30 @@
+{
+  "name": "donquixote/composer-discover-d7-contrib",
+  "description": "Discovers currently installed Drupal 7 modules, and adds them to composer.json dynamically.",
+  "minimum-stability": "dev",
+  "license": "BSD-3-Clause",
+  "type": "composer-plugin",
+  "extra": {
+    "class": "donquixote\\Composer\\DiscoverD7Contrib"
+  },
+  "authors": [
+    {
+      "name": "Andreas Hennings",
+      "email": "andreas@dqxtech.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "composer-plugin-api": "^1.0"
+  },
+  "require-dev": {
+    "composer/composer": "~1.0",
+    "phpunit/phpunit": "~4.6"
+  },
+  "autoload": {
+    "psr-4": {"donquixote\\Composer\\": "src"}
+  },
+  "autoload-dev": {
+    "psr-4": {"donquixote\\Composer\\Tests\\": "tests"}
+  }
+}
